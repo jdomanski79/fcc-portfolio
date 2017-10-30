@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul{
+    /*display: inline-block;*/
+    list-style-type: none;
+    width: 100%;
+    /*text-align: right;*/
+    background-color: black;
+}
+nav li{
+    /*background: linear-gradient(to top,blue, lightblue);*/
+    float:right;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+}
+
+nav li a, nav li a:visited{
+    display: block;
+    width: 80px;
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover {
+    background-color: yellow;    
+}
