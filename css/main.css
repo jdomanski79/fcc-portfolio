@@ -5,8 +5,8 @@
 }
 
 nav ul{
-    /*position: fixed;
-    top: 0;*/
+    position: fixed;
+    top: 0;
     overflow: hidden;
     list-style-type: none;
     width: 100%;
@@ -35,6 +35,22 @@ img {
     width: 50%;
 }
 
-#portfolio{
+.portfolio{
+    width: 100%;
     display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-content: center;
+    border: 10px solid black; 
 }
+
+.portfolio a {
+    display: block;
+    width: 30%;
+
+}
+
+a img {
+    width: auto;
+}
+
