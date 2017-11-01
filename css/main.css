@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    max-width: 960px;
+    margin: 0 auto;
+}
 nav ul{
     position: fixed;
     top: 0;
@@ -15,7 +19,7 @@ nav ul{
 }
 nav li{
     /*background: linear-gradient(to top,blue, lightblue);*/
-    float:right;
+    display: inline-block;
 }
 
 nav li a, nav li a:visited{
@@ -31,26 +35,28 @@ nav li a:hover {
     background-color: yellow;    
 }
 
-img {
-    width: 50%;
-}
 
 .portfolio{
     width: 100%;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    align-content: center;
+    align-items: center;
     border: 10px solid black; 
 }
 
+.flex-item{
+    padding: 20px;
+    flex-basis: 30%;
+}
+figcaption{
+    text-align: center;
+}
 .portfolio a {
-    display: block;
-    width: 30%;
 
 }
 
 a img {
-    width: auto;
+    width: 100%;
 }
 
