@@ -3,11 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    /*background: url('https://static.pexels.com/photos/317355/pexels-photo-317355.jpeg')  no-repeat;*/
+    /*background-size: cover;*/
+}
 
 body{
-    max-width: 960px;
     margin: 0 auto;
 }
+header{
+    margin-top: 50px;
+}
+
 nav ul{
     position: fixed;
     top: 0;
@@ -37,17 +44,18 @@ nav li a:hover {
 
 
 .portfolio{
-    width: 100%;
+    margin: 0 auto;
+    max-width: 960px;
     display: flex;
     justify-content: center;
+    align-content: center;
     flex-flow: row wrap;
     align-items: center;
-    border: 10px solid black; 
 }
 
 .flex-item{
     padding: 20px;
-    flex-basis: 30%;
+    flex-basis: 50%;
 }
 figcaption{
     text-align: center;
@@ -60,3 +68,6 @@ a img {
     width: 100%;
 }
 
+a img:hover{
+    opacity: 0.7;
+}
