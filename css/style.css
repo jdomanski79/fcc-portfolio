@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    /*background: url('https://static.pexels.com/photos/317355/pexels-photo-317355.jpeg')  no-repeat;*/
+    /*background-size: cover;*/
+  font-family: monospace;
+}
+
+body{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.about-row{
+  background-color: lightgrey;
+/*   background: linear-gradient(45deg, black, white); */
+}
+
+#me-img{
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 200px;
+  border-radius: 300px;
+}
+header{
+  color: black;
+  margin-top: 70px;
+  height: 100vh;
+  font-size: 50px;
+  font-family: monospace;
+  text-shadow: 2px 2px 3px white;
+}
+
+pre{
+  line-height: 0.5em;
+}
+  
+code{
+  font-size: 1.5rem;
+  lineheight: 2;
+}
+.reserved {
+  color: blue;
+}
+.var{
+  color: brown;
+}
+.val{
+  color: red;
+}
+/* ---navigation bar*/
+nav ul{
+    position: fixed;
+    top: 0;
+  z-index: 10;
+    /*overflow: hidden;*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    /*text-align: right;*/
+    background-color: lightgreen;
+  box-shadow: 1px 1px 20px black;
+}
+nav li{
+  width: auto;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px white;
+}
+
+nav li:hover {
+  background-color: ivory;
+  transition: 500ms;
+}
+
+nav li a, nav li a:visited{
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+/*--- main content -----*/
+
+.portfolio-row{
+/*     background-color: lightgreen; */
+  background: linear-gradient(to bottom,lightgreen, lightblue);
+}
+.portfolio-title{
+  padding: 10px;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+}
+.portfolio{
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: space-around;
+}
+
+.flex-item{
+    flex-basis: 30%;
+  
+}
+
+figure{
+  height: 40vh;
+  text-align: center;
+  padding-top: 20px;
+  background-color: ivory;
+}
+figcaption{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+a img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+a img:hover{
+    opacity: 0.7;
+}
+
+.contact-row{
+  background-color: lightgrey;
+}

@@ -1,24 +1,40 @@
 <!DOCTYPE html>
-<html>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>FCC Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>JD Porftolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="stylesheet" href="css/main.css">
-
+  <link rel="stylesheet" href="css/main.css">
+</head>
 <body>
-    <nav>
+    <nav id='main-navigation' role='navigation'>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+  <div class='about-row'> 
     <header id='about'>
-        This is me, JD hello!!
+        Hi there! I'm learning to code. I'm passionate about my family and running.
+    <img id='me-img' src='https://raw.githubusercontent.com/jdomanski79/fcc-portfolio/master/img/me.png'>
+<pre><code>
+  <span class='reserved'>function</span> isHappyLife (<span class='var'>passion</span>, <span class='var'>hardWork</span>) {
+    if (<span class='var'>passion</span> && <span class='var'>hardWork</span>) return <span class='val'>true</span>;
+    return <span class='val'>false</span>;
+  }
+</code></pre> 
+        
     </header>
-    <div id='portfolio' class = 'portfolio'>
+  </div>
+    <div class='portfolio-row'>
+      <p id='portfolio' class='portfolio-title'>PORTFOLIO</p>
+    <div class = 'portfolio'>
       <div class= 'flex-item'>
         <figure>
         <a href="https://codepen.io/jdomanski/full/aLPGxP/" target="_blank">
@@ -53,8 +69,10 @@
       </div>
         
     </div>
+    </div> <!--portfolio row-->
+  <div class= 'contact-row'>  
     <div id='contact' class='contact'>
-      <form>
+      <form> <!--https://formspree.io/ -->
         <caption> Contact form.</caption><br>
         Name:
         <input type='text'><br>
@@ -65,5 +83,11 @@
         <input type='submit' value='Send'>
       </form>
     </div>
+  </div>
+</body>
+</html>
+  
+    <script  src="js/index.js"></script>
+
 </body>
 </html>
