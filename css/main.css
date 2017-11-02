@@ -10,52 +10,63 @@ html{
 
 body{
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 header{
     margin-top: 50px;
 }
-
+/* ---navigation bar*/
 nav ul{
     position: fixed;
     top: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     list-style-type: none;
     width: 100%;
     /*text-align: right;*/
     background-color: lightgreen;
 }
 nav li{
-    /*background: linear-gradient(to top,blue, lightblue);*/
-    display: inline-block;
+    width: 80px;
+}
+
+nav li:hover {
+    background-color: yellow;
+    transition: 300ms;
 }
 
 nav li a, nav li a:visited{
-    display: block;
-    width: 80px;
     padding: 10px;
+    display: block;
+    margin: 0 auto;
     text-align: center;
     text-decoration: none;
     color: black;
 }
 
-nav li a:hover {
-    background-color: yellow;    
+/*--- main content -----*/
+
+.portfolio-row{
+    background-color: lightgreen;
 }
-
-
 .portfolio{
     margin: 0 auto;
     max-width: 960px;
+    margin-left: 200px;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-flow: row wrap;
     align-items: center;
+    
 }
 
 .flex-item{
     padding: 20px;
-    flex-basis: 50%;
+    flex-basis: 33%;
 }
 figcaption{
     text-align: center;
