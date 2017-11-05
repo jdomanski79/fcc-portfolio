@@ -1,89 +1,88 @@
 <!DOCTYPE html>
 <html >
 <head>
-  <meta charset="UTF-8">
-  <title>FCC Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>JD Porftolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
-  <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>JD Porftolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
     <nav id='main-navigation' role='navigation'>
       <ul>
-        <li><a href="#about">About</a></li>
+        <li><a href="#welcome-section">About</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  <div class='about-row'> 
-    <header id='about'>
-        Hi there! I'm learning to code. I'm passionate about my family and running.
+<section id='welcome-section'>
+    
     <img id='me-img' src='https://raw.githubusercontent.com/jdomanski79/fcc-portfolio/master/img/me.png'>
-<pre><code>
-  <span class='reserved'>function</span> isHappyLife (<span class='var'>passion</span>, <span class='var'>hardWork</span>) {
-    if (<span class='var'>passion</span> && <span class='var'>hardWork</span>) return <span class='val'>true</span>;
-    return <span class='val'>false</span>;
-  }
-</code></pre> 
-        
-    </header>
-  </div>
-    <div class='portfolio-row'>
-      <p id='portfolio' class='portfolio-title'>PORTFOLIO</p>
-    <div class = 'portfolio'>
-      <div class= 'flex-item'>
-        <figure>
+  <div class='welcome-text'>
+    <p>Jarek, self-taught newbie, learning in freeCodeCamp.org.</p>
+<!--   <pre><code>
+    <span class='reserved'>function</span> progress (<span class='var'>passion</span>, <span class='var'>hardWork</span>) {
+      if (<span class='var'>passion</span> && <span class='var'>hardWork</span>) return <span class='val'>true</span>;
+      return <span class='val'>false</span>;
+    }
+  </code></pre>  -->
+  </div> 
+</section>
+  <!-- section portfolio -->
+<section id="portfolio-section">
+    <p id='portfolio' class='portfolio-title'>MY PORTFOLIO</p>
+    
+  <div class = 'portfolio'>
+    <div class= 'flex-item'>
+      <figure>
+      <a href="https://codepen.io/jdomanski/full/aLPGxP/" target="_blank">
+        <img src='https://raw.githubusercontent.com/jdomanski79/fcc-portfolio/master/img/simon.png'>
+      </a>
+      <figcaption> Simon Game</figcaption>
+      </figure>
+    </div>
+    <div class= 'flex-item'>
+      <figure>
         <a href="https://codepen.io/jdomanski/full/aLPGxP/" target="_blank">
-          <img src='https://raw.githubusercontent.com/jdomanski79/fcc-portfolio/master/img/simon.png'>
+          <img src='https://raw.githubusercontent.com/jdomanski79/fcc-portfolio/master/img/tictactoe.png'>
         </a>
-        <figcaption> Simon Game</figcaption>
-        </figure>
-      </div>
-      <div class= 'flex-item'>
-        <figure>
-          <a href="https://codepen.io/jdomanski/full/aLPGxP/" target="_blank">
-            <img src='https://raw.githubusercontent.com/jdomanski79/fcc-portfolio/master/img/tictactoe.png'>
-          </a>
-          <figcaption> TicTacToe game with minimax algorithm</figcaption>
-        </figure>
-      </div>
-      <div class= 'flex-item'>
-        <figure>  
-          <a href="https://codepen.io/jdomanski/full/aLPGxP/" target="_blank">
-            <img src='https://raw.githubusercontent.com/jdomanski79/fcc-portfolio/master/img/wikipedia.png'>
-          </a>
-          <figcaption> Wikiepedia Viewer</figcaption>
-        </figure>
-      </div>
-      <div class= 'flex-item'>
-        <figure>  
-          <a href="https://codepen.io/jdomanski/full/aLPGxP/" target="_blank">
-            <img src='https://raw.githubusercontent.com/jdomanski79/fcc-portfolio/master/img/localweather.png'>
-          </a>
-          <figcaption> Local weather</figcaption>
-        </figure>
-      </div>
-        
+        <figcaption> TicTacToe game with minimax algorithm</figcaption>
+      </figure>
     </div>
-    </div> <!--portfolio row-->
-  <div class= 'contact-row'>  
-    <div id='contact' class='contact'>
-      <form> <!--https://formspree.io/ -->
-        <caption> Contact form.</caption><br>
-        Name:
-        <input type='text'><br>
-        Email:
-        <input type='text'><br>
-        Message:
-        <input type='text'><br>
-        <input type='submit' value='Send'>
-      </form>
+    <div class= 'flex-item'>
+      <figure>  
+        <a href="https://codepen.io/jdomanski/full/aLPGxP/" target="_blank">
+          <img src='https://raw.githubusercontent.com/jdomanski79/fcc-portfolio/master/img/wikipedia.png'>
+        </a>
+        <figcaption> Wikipedia Viewer</figcaption>
+      </figure>
     </div>
+    <div class= 'flex-item'>
+      <figure>  
+        <a href="https://codepen.io/jdomanski/full/aLPGxP/" target="_blank">
+          <img src='https://raw.githubusercontent.com/jdomanski79/fcc-portfolio/master/img/localweather.png'>
+        </a>
+        <figcaption> Local weather</figcaption>
+      </figure>
+    </div>
+      
   </div>
+</section> <!--portfolio -->
+
+  <footer id='contact'>
+    <p> Contact</p>
+    <i class="fa fa-facebook" aria-hidden="true"></i>
+    <a href="https://codepen.io/jdomanski" target='_blank'>
+      <i class="fa fa-codepen" aria-hidden="true"></i>
+    </a>
+    <i class="fa fa-github" aria-hidden="true"></i>
+    <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+  </footer>
+    <script  src="js/index.js"></script>
+
 </body>
 </html>
   

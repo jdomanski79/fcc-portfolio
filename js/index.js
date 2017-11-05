@@ -1,17 +1,22 @@
 console.clear();  
 let el = document.getElementById('portfolio');
-  let scrollY = window.pageYOffset;
-  let navHeight = document.querySelector('nav ul').offsetHeight;  
+  let scrollY = window.pageYOffset;  
   let scrollDiff = el.offsetTop - scrollY;  
-  console.log(el.offsetTop, navHeight);
+  console.log(el.offsetTop);
+console.log(window.pageYOffset);
 let y = scrollY;
-//window.scrollTo(0,500);
-
-function scroll(){
+window.scrollTo(0,500);
+function scrollTo(){
     
-      y += 5;
-      if (y > (el.offsetTop - navHeight)) return;
+    if (window.pageYOffset != el.offsetTop) {
+      y += 10;
+      console.log(y);
+      if (y > el.offsetTop) {
+        y = el.offsetTop;
+        return;
+      }
       window.scrollTo(0,y);
-      setTimeout(scroll,1);
+      setTimeout(scrollTo,100);
+    };
   }
-scroll();
+scrollTo();
