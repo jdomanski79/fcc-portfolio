@@ -10,7 +10,7 @@ for (let link of navLinks){
 
 function handleScroll(event){
   event.preventDefault();
-  let elId = event.target.href.slice(event.target.href.indexOf('#') + 1);
+  let elId = this.href.slice(this.href.indexOf('#') + 1);
   let element = document.getElementById(elId);
   let navHeight = document.querySelector('nav ul').offsetHeight;
   const scrollEnd = element.offsetTop - navHeight;
