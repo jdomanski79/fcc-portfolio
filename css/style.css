@@ -15,29 +15,17 @@ body{
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(30deg,blue,lightblue);
+  background: linear-gradient(30deg,green,lightgrey);
 }
 
 nav ul {
-  background-color: #6C5656;
-}
-#welcome-section {
-  /*background-color: #FFB7B7;*/
-  /*background: linear-gradient(30deg,blue,lightblue);*/
+  background-color: grey;
 }
 
-#portfolio-section {
-  /*background-color: #CF5C36;*/
-  /*background: linear-gradient(30deg,blue,lightgreen);*/
-}
 .flex-item{
-  background-color: white;
+  
 }
 
-footer {
-  /*background-color: #FFB7B7;*/
-  /*background: linear-gradient(-30deg,black,lightblue);*/
-}
 
 #welcome-section{
   display: flex;
@@ -68,18 +56,15 @@ nav ul{
   top: 0;
   left: 0;
   z-index: 10;
-    /*overflow: hidden;*/
   display: flex;
   justify-content: flex-end;
   align-items: center;
   list-style-type: none;
   width: 100vw;
-  /*text-align: right;*/
   box-shadow: 1px 1px 20px black;
 }
 nav li{
   width: 150px;
-  
 }
 
 nav li:hover {
@@ -149,7 +134,7 @@ nav li a, nav li a:visited{
 }
 
 .flex-item{
-  flex: none;
+  background-color: white;
   width: 324px;
   height: 240px;
   margin: 10px;

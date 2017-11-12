@@ -29,19 +29,17 @@ function handleScroll(event){
   function scrollToId(){
     if (Math.abs(step - scrollEnd) > Math.abs(delta)) {
       step += delta;
-      // console.log(Math.abs(step - scrollEnd), delta);
-    }
-    else {
+    } else {
       step = scrollEnd;
       window.scrollTo(0,step);
-        
-        return;
+      return;
     }
     window.scrollTo(0,step);
     setTimeout(scrollToId, scrollStepTime);
   }
 }
 
-function showNav() {
+function showNav(e) {
+  e.preventDefault();
   document.querySelector('nav').classList.toggle('clicked');
 }
