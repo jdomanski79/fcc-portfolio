@@ -4,10 +4,7 @@
     box-sizing: border-box;
 }
 html{
-    /*background: url('https://static.pexels.com/photos/317355/pexels-photo-317355.jpeg')  no-repeat;*/
-    /*background-size: cover;*/
   font-family: monospace;
-  background-color: #ffffe0;
 }
 
 body{
@@ -42,7 +39,7 @@ nav ul {
 
 #me-img{
   margin: 0 20px;
-  width: 200px;
+  width: 15%;
   border-radius: 100px;
 }
 
@@ -87,6 +84,15 @@ nav li a, nav li a:visited{
 }
 
 @media screen and (max-width: 600px) {
+  .welcome-text {
+    width: 70%;
+  }
+
+#me-img{
+  margin: 0 20px;
+  width: 30%;
+  border-radius: 100px;
+}
   nav ul {
     display: block;
   }

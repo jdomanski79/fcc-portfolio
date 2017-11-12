@@ -40,6 +40,7 @@ function handleScroll(event){
 }
 
 function showNav(e) {
+  // avoid returning to top after mobile menu clicked
   e.preventDefault();
   document.querySelector('nav').classList.toggle('clicked');
 }
