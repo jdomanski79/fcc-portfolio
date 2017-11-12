@@ -16,27 +16,6 @@ body{
   display: flex;
   flex-direction: column;
 }
-/*background colors */
-.color-primary-0 { color: #AA7939 } /* Main Primary color */
-.color-primary-1 { color: #351E00 }
-.color-primary-2 { color: #70450D }
-.color-primary-3 { color: #E4B77D }
-.color-primary-4 { color: #FFE5C3 }
-
-.color-secondary-1-0 { color: #333577 } /* Main Secondary color (1) */
-.color-secondary-1-1 { color: #040525 }
-.color-secondary-1-2 { color: #13154E }
-.color-secondary-1-3 { color: #62639F }
-.color-secondary-1-4 { color: #A5A6CF }
-
-.color-secondary-2-0 { color: #277552 } /* Main Secondary color (2) */
-.color-secondary-2-1 { color: #002514 }
-.color-secondary-2-2 { color: #094D2E }
-.color-secondary-2-3 { color: #569E7D }
-.color-secondary-2-4 { color: #9DCEB7 }
-
-
-
 
 nav ul {
   background-color: #E4B77D;
@@ -75,23 +54,6 @@ footer {
   border-radius: 100px;
 }
 
-pre{
-  line-height: 0.5em;
-}
-  
-code{
-  font-size: 1.5rem;
-  lineheight: 2;
-}
-.reserved {
-  color: blue;
-}
-.var{
-  color: brown;
-}
-.val{
-  color: red;
-}
 a, a:visited{
   color: black;
   text-decoration: none;
@@ -113,9 +75,7 @@ nav ul{
 }
 nav li{
   width: 150px;
-  font-size: 1.6rem;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px white;
+  
 }
 
 nav li:hover {
@@ -124,12 +84,46 @@ nav li:hover {
 }
 
 nav li a, nav li a:visited{
-    padding: 10px;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px white;
 }
 
+.nav-icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    display: block;
+  }
+  nav li {
+    width: 100%;
+  }
+  nav li:not(:first-child) {
+    display:none;
+  }
+  nav li:first-child {
+    width: 40px;
+  }
+
+  .nav-icon {
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin-right: 10px;
+    font-size: 2rem;
+  }
+
+  nav.clicked li{
+    display: block;
+  }
+}
+/*end of media query*/
 /*--- main content -----*/
 
 #portfolio-section {
