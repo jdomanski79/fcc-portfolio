@@ -15,7 +15,7 @@ function handleScroll(event){
 
   // hide menu on small screen
   document.querySelector('nav').classList.remove('clicked');
-  console.log("this", this)
+  
   let elId = this.href.slice(this.href.indexOf('#') + 1);
   let element = document.getElementById(elId);
   let navHeight = document.querySelector('nav ul').offsetHeight;
